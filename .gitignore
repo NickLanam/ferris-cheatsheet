@@ -9,7 +9,9 @@
 /coverage
 
 # production
-/build
+# Allowed for this repository on purpose.
+# It's so GitHub Pages can serve it.
+# /build
 
 # misc
 .DS_Store

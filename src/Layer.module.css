@@ -1,0 +1,102 @@
+.layerWrapper {
+  flex: 0 1 auto;
+  border: calc(var(--key-gap) * var(--scale)) rgba(255, 255, 255, 0.25) dashed;
+  border-radius: calc(var(--key-width) * var(--scale));
+  margin: calc(var(--key-width) * var(--scale));
+}
+
+.layerTint-BASE {
+  background: rgba(127, 127, 127, 0.125);
+}
+
+.layerTint-LOWER {
+  background: rgba(64, 127, 255, 0.125);
+}
+
+.layerTint-RAISE {
+  background: rgba(64, 255, 127, 0.125);
+}
+
+.layerTint-ADJUST {
+  background: rgba(255, 64, 64, 0.125);
+}
+
+.layerTint-NUMPAD {
+  background: rgba(255, 255, 64, 0.125);
+}
+
+.layerTint-GAME {
+  background: rgba(64, 192, 192, 0.125);
+}
+
+.layerTint-GAME_L {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(64, 192, 192, 0.125),
+    rgba(64, 192, 192, 0.125) 1em,
+    rgba(64, 127, 255, 0.125) 1em,
+    rgba(64, 127, 255, 0.125) 2em
+  );
+}
+
+.layerTint-GAME_R {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(64, 192, 192, 0.125),
+    rgba(64, 192, 192, 0.125) 1em,
+    rgba(64, 255, 127, 0.125) 1em,
+    rgba(64, 255, 127, 0.125) 2em
+  );
+}
+
+.layer {
+  position: relative;
+  width: calc(var(--scale) * 230mm);
+  height: calc(var(--scale) * 88mm);
+  margin: calc(var(--key-height) / 2) 0;
+}
+
+.layer h3 {
+  position: absolute;
+  left: 50%;
+  top: calc(var(--scale) * var(--key-height) * 2);
+  transform: translate(-50%, -50%);
+  width: calc(var(--scale) * var(--key-width) * 3);
+  text-align: center;
+}
+
+.key {
+  user-select: none;
+  cursor: help;
+  position: absolute;
+  border-radius: calc(var(--scale) * 1.5mm);
+  border: calc(var(--scale) * 1.2mm) rgba(255, 255, 255, 0.45) solid;
+  background-color: white;
+  background: linear-gradient(to top, #dcdcd5 0%, #EEEEE7 8%, #d2d2ca 65%);
+  width: var(--key-width);
+  height: var(--key-height);
+  padding: calc(var(--scale) * 3mm);
+  overflow: hidden;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  font-size: calc(var(--scale) * 3.5mm);
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: bold;
+}
+
+.key.keyWithNub::after {
+  content: '';
+  width: 40%;
+  height: 0;
+  position: absolute;
+  left: 30%;
+  bottom: 9%;
+  border-top: 1px rgba(255, 255, 255, 0.75) solid;
+  box-shadow: 0 1px 2px 0.5px rgba(0, 0, 0, 0.25);
+  border-radius: 1px;
+}

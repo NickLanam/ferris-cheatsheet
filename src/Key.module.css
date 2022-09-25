@@ -1,0 +1,31 @@
+.label {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    /* Trick to have an inset text shadow, imitates an etching */
+    color: transparent;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.25);
+    background-clip: text;
+  }
+  
+  /* The above trick doesn't work on SVGs, so do something less convincing with those */
+  .label svg {
+    color: rgba(0, 0, 0, 0.7);
+    margin-right: calc(var(--scale) * 0.5mm);
+  }
+  
+  .labelUpper, .labelLower {
+    font-size: 0.6rem;
+  }
+  
+  .labelMid {
+    font-size: 1rem;
+  }
+
+  .labelMidSmall {
+    font-size: 0.5rem;
+  }
+  
