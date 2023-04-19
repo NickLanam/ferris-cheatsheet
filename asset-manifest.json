@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ferris-cheatsheet/index.html/static/css/main.29508ad5.css",
+    "main.js": "/ferris-cheatsheet//index.html/static/js/main.e2cc70d4.js",
+    "index.html": "/ferris-cheatsheet/index.html/index.html",
+    "main.29508ad5.css.map": "/ferris-cheatsheet/index.html/static/css/main.29508ad5.css.map",
+    "main.e2cc70d4.js.map": "/ferris-cheatsheet/index.html/static/js/main.e2cc70d4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29508ad5.css",
+    "static/js/main.e2cc70d4.js"
+  ]
+}

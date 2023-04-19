@@ -1,3 +1,3 @@
 # My Ferris Sweep Layout
 
-Not much to see here. Look at the published GitHub Pages URL to look at the result.
+This branch is just the `build/` directory at the root for GitHub to publish the page.
